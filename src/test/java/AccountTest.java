@@ -1,0 +1,46 @@
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class AccountTest {
+    Account a = new Account();
+
+    @Test
+    public void testAccount() {
+        Account a = new Account();
+        double expected = 0;
+        double actual = a.getBalance();;
+        assertEquals(expected,actual,0);
+    }
+
+    @Test
+    public void testAccountDouble() {
+        Account a = new Account(20);
+        double expected = 20;
+        double actual = a.getBalance();
+        assertEquals(expected,actual,0);
+    }
+
+    @Test
+    public void testWithdrawProcess() throws InsufficientFunds {
+        String actual = "0";
+        a.withdrawProcess(actual);
+        String expected = "0";
+        assertEquals(actual,expected);
+
+    }
+
+    @Test
+    public void testDepositProcess() {
+        a.depositProcess("50");
+        assertEquals(a.getBalance(),50,0);
+    }
+    //tests if balance returns correct value
+    @Test
+    public void testGetBalance() {
+        Account a = new Account();
+        double balance = a.getBalance();
+        assertEquals(balance,0.0,0);
+    }
+
+}
