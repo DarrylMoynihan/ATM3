@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 public class AccountTest {
     Account a = new Account();
 
+    //test balance value when object created
     @Test
     public void testAccount() {
         Account a = new Account();
@@ -12,7 +13,7 @@ public class AccountTest {
         double actual = a.getBalance();;
         assertEquals(expected,actual,0);
     }
-//test account balance with balance argument
+//test account balance with balance argument of 20
     @Test
     public void testAccountDouble() {
         Account a = new Account(20);
