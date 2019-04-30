@@ -34,6 +34,7 @@ public class AccountTest {
         a.depositProcess("50");
         assertEquals(a.getBalance(),50,0);
     }
+
     //tests if balance returns correct value
     @Test
     public void testGetBalance() {
