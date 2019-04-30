@@ -12,6 +12,7 @@ public class AccountTest {
         double actual = a.getBalance();;
         assertEquals(expected,actual,0);
     }
+
 //test account balance with balance argument of 20
     @Test
     public void testAccountDouble() {
