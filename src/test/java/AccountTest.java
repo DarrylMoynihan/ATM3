@@ -31,8 +31,8 @@ public class AccountTest {
     //test depositProcess
     @Test
     public void testDepositProcess() {
-        a.depositProcess("50");
-        assertEquals(a.getBalance(),50,0);
+        a.depositProcess("40");
+        assertEquals(a.getBalance(),40,0);
     }
 
     //tests if balance returns correct value
