@@ -7,7 +7,6 @@ public class AccountTest {
     //test balance value when object created
     @Test
     public void testAccount() {
-
         Account a = new Account();
         double expected = 0;
         double actual = a.getBalance();
