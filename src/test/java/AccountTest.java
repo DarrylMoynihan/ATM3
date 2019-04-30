@@ -1,10 +1,8 @@
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class AccountTest {
     Account a = new Account();
-
     //test balance value when object created
     @Test
     public void testAccount() {
@@ -21,7 +19,6 @@ public class AccountTest {
         double actual = a.getBalance();
         assertEquals(expected,actual,0);
     }
-
     //test withdrawProcess
     @Test
     public void testWithdrawProcess() throws InsufficientFunds {
@@ -29,9 +26,7 @@ public class AccountTest {
         a.withdrawProcess(actual);
         String expected = "0";
         assertEquals(actual,expected);
-
     }
-
     //test depositProcess
     @Test
     public void testDepositProcess() {
@@ -45,5 +40,4 @@ public class AccountTest {
         double balance = a.getBalance();
         assertEquals(balance,0.0,0);
     }
-
 }
