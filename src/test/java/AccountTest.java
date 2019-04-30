@@ -27,6 +27,7 @@ public class AccountTest {
         String expected = "0";
         assertEquals(actual,expected);
     }
+
     //test depositProcess
     @Test
     public void testDepositProcess() {
