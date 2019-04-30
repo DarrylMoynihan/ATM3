@@ -10,7 +10,7 @@ public class AccountTest {
     public void testAccount() {
         Account a = new Account();
         double expected = 0;
-        double actual = a.getBalance();;
+        double actual = a.getBalance();
         assertEquals(expected,actual,0);
     }
 
