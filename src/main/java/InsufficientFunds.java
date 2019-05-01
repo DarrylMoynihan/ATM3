@@ -2,8 +2,7 @@
 public class InsufficientFunds extends Exception {
 
     InsufficientFunds(){
-        super("Insufficient Funds"
-        );
+        super("Insufficient Funds");
     }
 }
 
