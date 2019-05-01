@@ -24,6 +24,7 @@ public class AccountTest {
     }
     //test withdrawProcess
     @Test
+
     public void testWithdrawProcess() throws InsufficientFunds {
         String actual = "0";
         a.withdrawProcess(actual);
