@@ -16,7 +16,6 @@ public class AccountTest {
 
 //test account balance with balance argument of 20
     @Test
-
     public void testAccountDouble() {
         Account a = new Account(20);
         double expected = 20;
